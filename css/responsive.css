@@ -208,18 +208,18 @@
     top: 44px;
 }
 .typing-content {
-    padding-left:  5px;
+    padding-left:0px;
   
 }
 .typing-content h5 {
     font-size: 12px;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     color: #3FBF3F;
     font-weight: bold;
     padding: 20px 10px;
 }
 #about-me{
-    padding:100px 0 0 0;
+    padding:150px 0 0 0;
 }
 .box {
     margin-top: 20px;
@@ -270,7 +270,7 @@
 }
 #work .work-img-box {  
     width: 80%;
-    height: 360px;    
+    height: 265px;    
     margin: 0 auto;      
     margin-top: 50px;
 }
@@ -299,7 +299,9 @@
     letter-spacing: 0;
 }
 .element-item {
-    width: 100%;
+    width: 80%;
+    margin-left: 20px;
+    border: 5px solid #fff;
 }
 .button-group .button { 
      margin-right: 0px; 
@@ -316,10 +318,17 @@
     font-size: 30PX;  
     max-width: 360px;    
 }
+.owl-carousel .item img {
+    max-width: 150px;
+    height: 150px;
+}
 .owl-carousel .item h4 {
     font-size: 25px;
     line-height: 50px;    
     width: 100%;
+}
+.owl-carousel .item h4:hover{
+    letter-spacing: 11px;
 }
 .owl-carousel .item p{
     line-height: 1;
