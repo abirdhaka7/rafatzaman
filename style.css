@@ -1,0 +1,751 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+}
+* { box-sizing: border-box; };
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+*:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    scroll-behavior: smooth;   
+    position: relative;
+}
+
+
+/*------header---*/
+
+#header .navbar-brand h6{
+    color:#ff6347e0;
+    padding: 5px 12px;
+    font-size: 22px;
+    border: 2px solid #3FBF3F;
+    font-weight: bold;
+    background: #ffffff6e;
+    border-radius: 0 14px;
+    transition: all 0.5s;
+}
+#header .navbar-brand:hover h6{
+    letter-spacing: 2px;
+}
+.navbar{
+    padding: 0;
+}
+.navbar-nav li {
+    transition: all 0.5s;
+    text-align: center;
+    text-transform: uppercase;
+}
+a.nav-link{
+    margin: 0;
+    transition: all 0.5s;
+}
+.navbar-light .navbar-nav .nav-link{
+    color:#fff;
+    transition: all 0.5s;
+    padding: 25px 20px;
+}
+.navbar-light .navbar-nav li:hover {
+    background-color: #3FBF3F;
+    color: red;
+}
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover{
+    color:tomato;   
+    background-color: #3FBF3F;    
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show>.nav-link{
+    background-color: #3FBF3F;
+    color: #fff;
+    border-bottom: 3px solid tomato;
+}
+
+.my-nav {   
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    background: rgba(0,0,0,0.2)!important;
+    left: 0;
+}
+
+/*---------carousel---*/
+.my-carousel{
+    top: 0px;
+}
+#carousel{   
+    padding-bottom: 20px;
+    position: relative;
+}
+.carousel-caption h5{
+    color: #3FBF3F;
+    font-size: 35px;
+}
+.carousel-caption p{
+    color: tomato;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/*--------typing-text-----*/
+.typing-content{
+    padding-left: 15%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: url(img/zig\ zag\ wool.png)repeat;
+    background-attachment: fixed;
+  
+    
+}
+.typing-content h5 {
+   
+    font-size: 35px;
+    letter-spacing: 15px;
+    color: #3FBF3F;
+    font-weight: bold;
+    padding: 20px 10px;
+}
+.typing-content span{
+    color: tomato;
+}
+/*------------about-me-------*/
+#about-me{
+    background: url(img/gravel.png)repeat;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+.box{
+    margin-top: 30px;
+    width: 100%;
+    height: 450px;
+    overflow: hidden; 
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transition: .5s;
+}
+.box:hover{
+    transform: translateY(-30px);
+    box-shadow: 0 50px 50px rgba(0,0,0,0.5);
+}
+.box .about-me-img{
+    position: relative;
+}
+.box .about-me-img img{
+    transition: .5s;
+    width: 100%;
+}
+.box:hover .about-me-img img{
+    opacity: 0.5;
+    transform: translateY(-30px);
+}
+.box .about-me-img-content{
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+    opacity: 0;
+}
+.box:hover .about-me-img-content{
+    opacity: 1;
+    bottom: 0;
+    cursor: pointer;
+}
+.box .about-me-img-content h3{
+    font-size: 35px;
+    color:#3FBF3F;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.5s;
+    position: relative;
+}
+.box .about-me-img-content h3:hover{
+   letter-spacing: 10px;
+}
+.box .about-me-img-content h3::after{
+    content: " ";
+    position: absolute;
+    width:0;
+    height: 2px;
+    background: tomato;
+    border-radius: 50%;
+    bottom: 0px;
+    transition: all 0.5s;
+    left: 0;
+}
+.box .about-me-img-content h3:hover::after{
+    width:100%;
+}
+
+.box .about-me-img-content p{
+    font-size: 20px;   
+    color:tomato;
+    text-transform: uppercase;
+}
+.box .about-me-img-content .btn-d{
+    border: none;
+    background: #FE1B70;
+    text-transform: uppercase;
+    color: #FFF;
+    padding: 10px 20px;
+    font-weight: 700;
+    transition: .5s;
+}
+.box .about-me-img-content .btn-d:hover{
+    background: #3FBF3F;
+    color: #fff;
+}
+
+.about-me-content{
+    padding-top: 50px;
+    text-align: center;
+}
+.about-me-content-heading h2{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0 auto;
+    width: 64%;
+    color:#3FBF3F;
+    border-bottom: 2px solid tomato;
+    transition: all 0.5s;
+    font-family: 'Rokkitt', serif;
+}
+.about-me-content-heading:hover h2{
+    
+    letter-spacing: 15px;
+    cursor: pointer;
+}
+
+.about-me-content-child{
+    padding-top: 30px;
+}
+.about-me-content-child ul{
+    list-style: none;
+}
+.about-me-content-child ul li{   
+    font-size: 30px;   
+    line-height: 54px;
+    transition: all 0.5s;
+    font-family: 'Rokkitt', serif;
+    width:90%;    
+    position: relative;
+    margin: 0 auto;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.about-me-content-child ul li:hover{
+    font-weight: bold;
+    color: tomato;
+    cursor: pointer;
+    letter-spacing: 20px;
+}
+.about-me-content-child ul p::after{
+    content: " ";
+    position: absolute;
+    width:0;
+    height: 2px;
+    background: #3FBF3F;
+    border-radius: 50%;
+    bottom: 0px;
+    transition: all 0.5s;
+    right: 0;
+}
+.about-me-content-child li p:hover::after{
+    width:100%; 
+}
+
+/*----------work----------*/
+#work{
+    padding: 100px 0;
+    background: url(img/gravel.png)repeat;
+    background-attachment: fixed;
+    
+}
+#work .work-heading h2{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    width: auto;
+    color: #3FBF3F;
+    border-bottom: 2px solid tomato;
+    transition: all 0.5s;
+    font-family: 'Rokkitt', serif;
+}
+#work .work-heading:hover h2{
+    letter-spacing: 9px;
+    cursor: pointer;
+}
+#work .work-text{
+    padding-top: 30px;
+    transition: all 0.5s;
+}
+#work .work-text p{
+    transition: all 0.5s;
+    line-height: 2.2;
+    text-align: justify;
+    letter-spacing: 2px;
+    font-size: 28px; 
+}
+#work .work-text:hover p{  
+    cursor: pointer;
+}
+#work .work-img-box{
+    margin-top: 30px; 
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transition: .5s;
+}
+#work .work-img-box:hover{
+    transform: translateY(-40px);
+    box-shadow: 0 50px 50px rgba(0,0,0,0.5);
+}
+#work .work-me-img {
+    position: relative;
+}
+#work .work-me-img img{
+    transition: .5s;
+}
+.work-img-box:hover .work-me-img img{
+    opacity: 0.7;
+    transform: translateY(-30px);
+}
+#work .work-me-img-content{
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+    opacity: 0;
+}
+#work .work-img-box:hover .work-me-img-content{
+    opacity: 1;
+    bottom: 0;
+    cursor: pointer;
+}
+#work .work-me-img-content h3{
+    font-size: 35px;
+    color: #3FBF3F;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.5s;
+    position: relative;
+}
+.work-img-box .work-me-img-content h3:hover{
+    letter-spacing: 10px;
+ }
+.work-img-box .work-me-img-content h3::after{
+    content: " ";
+    position: absolute;
+    width:0;
+    height: 2px;
+    background: #fff;
+    border-radius: 50%;
+    bottom: 0px;
+    transition: all 0.5s;
+    left: 0;
+}
+.work-img-box .work-me-img-content h3:hover::after{
+    width:100%;
+}
+
+#work .work-me-img-content p{
+    font-size: 20px;
+    color: tomato;
+    text-transform: uppercase;
+}
+
+#work .work-me-img-content .btn-work{
+    border: none;
+    background: #FE1B70;
+    text-transform: uppercase;
+    color: #FFF;
+    padding: 10px 20px;
+    font-weight: 700;
+    transition: .5s;
+}
+.work-img-box .work-me-img-content .btn-work:hover{
+    background: #3FBF3F;
+    color: #fff;
+}
+/*-------portfolio---------*/
+#portfolio{
+    padding: 50px 0;
+    background: url(img/gravel.png)repeat;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+#portfolio H2{
+    padding: 10px 0;
+    font-size: 35PX;
+    text-transform: uppercase;
+    color: #3FBF3F;
+    transition: all 0.5S;
+    border-bottom: 2px solid tomato;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 4px;
+
+}
+#portfolio H2:hover{
+    letter-spacing: 12px;
+    cursor: pointer;
+}
+#portfolio p{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 25px 0;
+    font-size: 18PX;
+    transition: all 0.5S;
+}
+#portfolio p:hover{
+    letter-spacing: 5px;
+    color: tomato;
+    cursor: pointer;
+}
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  background: #676e67;
+  border: none; 
+  color:#fff;
+  font-family: sans-serif;
+  font-size: 14px;  
+  margin-bottom: 4px;
+  cursor: pointer;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  
+}
+button:focus{
+    outline: none;
+}
+
+.button:hover {
+  background-color:#3FBF3F;
+  /*letter-spacing:2px;*/
+  color: tomato;
+}
+
+
+/* ---- button-group ---- */
+
+.button-group {
+  margin-bottom: 30px;
+}
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  border-radius: 4px;
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+  position: relative;
+  float: left;
+  width: 33%;
+  max-height: 300px;
+    border:12px solid #fff;
+  color: #262524;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.element-item img{
+    width: 100%;
+    position: relative;
+}
+
+.iso-top-overlay h3{
+    font-size: 30PX;
+    text-transform: uppercase;
+    color: #3FBF3F;
+    transition: all 0.5S;       
+    letter-spacing: 4px;
+    margin-top: 100px;
+}
+.iso-top-overlay h3:hover{
+    letter-spacing:20px;
+}
+.iso-top-overlay{
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    transition: all 0.5s;
+}
+.element-item:hover .iso-top-overlay{
+    top: 0;
+    cursor: pointer;
+}
+/*-----------testimonial----------*/
+#testimonial{
+    padding: 50px 0;
+    background: url(img/gravel.png)repeat;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+#testimonial h2{
+    padding: 10px 0;
+    font-size: 35PX;
+    text-transform: uppercase;
+    color: #3FBF3F;
+    transition: all 0.5S;
+    border-bottom: 2px solid tomato;
+    max-width: 385px;
+    margin: 0 auto;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#testimonial h2:hover{    
+    letter-spacing: 15px;
+    cursor: pointer;
+
+}
+.owl-carousel .item img{
+    max-width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin: 0 auto 0 auto;
+    border: 2px solid #3FBF3F;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+.owl-carousel .item h4{
+    font-size: 30px;
+    line-height: 54px;
+    transition: all 0.5s;
+    font-family: 'Rokkitt', serif;
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.owl-carousel .item h4:after{
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #3FBF3F;
+    border-radius: 50%;
+    bottom: 0;
+    transition: all 0.5s;
+    right: 25%;
+}
+.owl-carousel .item h4:hover:after{
+    width: 50%;
+    cursor: pointer;
+}
+.owl-carousel .item h4:hover{
+    font-weight: bold;
+    color: tomato;
+    cursor: pointer;
+    letter-spacing: 20px;
+}
+.owl-carousel .item p{
+    font-size: 20px;
+
+}
+.owl-carousel .item p:before,
+.owl-carousel .item p:after{
+    content:"\201C";
+    color: tomato;
+    width: 10px;
+    height: 10px;
+    font-size: 45px;
+    ;
+}
+/*--------------contact-me----------*/
+#contact-Me{
+    padding: 100px 0;
+    background: url(img/gravel.png)repeat;
+    background-attachment: fixed;
+    padding: 100px 0;
+    
+}
+.contact-me-text h2{
+    padding: 10px 0;
+    font-size: 35PX;
+    text-transform: uppercase;
+    color: #3FBF3F;
+    transition: all 0.5S;
+    border-bottom: 2px solid tomato;
+    max-width: 385px;
+    margin: 0 auto;
+    letter-spacing: 5px;
+    text-align: center;
+  
+}
+.contact-me-text h2:hover{
+    letter-spacing: 15px;
+    cursor: pointer;
+    transition: all 0.5S;
+}
+.contact-me-text p{ 
+    margin: 100px 0;   
+    transition: all 0.5S;
+    font-size: 20px;
+}
+.contact-me-content h4{
+    font-size: 25px;
+    transition: all 0.5S;
+    
+}
+.contact-me-text p:hover{    
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: tomato;
+}
+
+
+
+
+.contact-me-content {
+    text-align: center;
+}
+.contact-me-content i{
+    transition: all 0.5S;
+    font-size: 45px;
+}
+.contact-me-content:hover i{    
+    cursor: pointer;
+    color: #3FBF3F;
+}
+.contact-me-content:Hover h4{
+    color: tomato;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.contact-me-content span{
+    font-weight: bold;
+    transition: all 0.5S;
+}
+
+.contact-me-content span:hover {
+   letter-spacing: 2px;cursor: pointer;
+}
+
+
+
+
+/*----------footer-contact--------*/
+#footer h4{
+    color: #fff;
+    text-align: center;
+    transition: all 0.5s;
+}
+#footer h4:hover{
+    cursor: pointer;
+    color: #3FBF3F;
+}
+#contact-Me .form-control{
+    border-radius:0;
+}
+input.form-control{
+    margin: 40px 0;
+}
+.contact-form .btn{
+    color: white;
+    background:#3FBF3F; 
+    transition: all 0.5s;
+}
+.contact-form .btn:hover{
+    color: tomato;
+    outline: none;
+    background: #3FBF3F;
+}
+/*----------footer-bottom---------*/
+#footer{
+    padding: 100px 0;
+    background: url(img/zig\ zag\ wool.png)repeat;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+#footer .footer-text{
+    color: #fff;
+    padding-top: 50px;
+}
+
+#footer .footer-text p{
+    color: tomato
+}
+#footer .footer-text span{
+    color: #3FBF3F;
+    transition: all 0.5s;
+}
+#footer .footer-text span:hover{
+    color: tomato;
+    cursor: pointer;
+}
+#footer .footer-social-link{
+    padding-top: 50px;
+}
+#footer .footer-social-link h5{
+    color: tomato;
+    transition: all 0.5s;
+}
+#footer .footer-social-link:hover h5{
+    color: #3FBF3F;
+    cursor: pointer;
+}
+#footer .footer-social-link ul li{
+    list-style: none;    
+}
+#footer .footer-social-link ul li a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+    transition: all 0.5s;
+}
+
+#footer .footer-social-link ul li a:hover {
+    color: #3FBF3F;
+    cursor: pointer;   
+}
