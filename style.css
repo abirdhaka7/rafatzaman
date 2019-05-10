@@ -489,7 +489,7 @@ button:focus{
   float: left;
   width: 33%;
   max-height: 300px;
-    border:12px solid #fff;
+    border:5px solid #fff;
   color: #262524;
   transition: all 0.5s;
   overflow: hidden;
